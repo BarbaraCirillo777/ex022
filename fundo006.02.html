@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url(Imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;/* Repetiu a imagem, pois o texto ficou maior na caixa*/
+            background-size: cover; /*100% 100%; Se não colocar height 100vh, não funciona ( só que não funciona se achatar a tela, distorce a imagem, então a solução é essa*/
+            background-attachment: fixed; /*O conteudo da caixa que vai subir ou descer e o conteudo se adapta ao tamanho da tela*/
+           
+        
+            /* SHORTHAND: color > image > position > repeat > [size] > attachment. Para fazer declaração unica*/
+        
+           /*background: black url(Imagens/wallpaper002.jpg) center center no-repeat cover fixed;( O cover[size] não fuciona e tira a imagem de traz.Pode declarar desta forma e apenas declara o size separado)*/
+        }
+        main {
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;/* vai arredondar a borda*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Teste de imagem de fundo</h1>      
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam corrupti error sed, iure iusto magnam commodi nihil nulla sunt earum ducimus fugit accusamus maiores aspernatur alias cupiditate impedit omnis aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptates earum? Autem totam nemo est sint, sapiente repellat, ad iusto aspernatur quae neque praesentium illum eos reiciendis enim voluptatibus exercitationem.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quos? Et voluptas, libero reiciendis in ex nam magni quo ullam soluta fugit corrupti rerum cumque laboriosam doloremque quidem perferendis explicabo?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, qui. Fugiat expedita repellendus magnam accusamus quod eos non facere ab. Necessitatibus quas nisi iste, atque asperiores ex culpa accusamus cupiditate? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt iure ab autem ullam id, commodi dolore optio repudiandae ad laborum minus fugit. Ut delectus vel aut, perferendis obcaecati illum repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat enim quibusdam pariatur alias cupiditate atque maxime officia commodi! Doloremque placeat optio cupiditate suscipit, iste unde fugit culpa quos assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quae similique ex assumenda deserunt? Maiores omnis delectus minus vitae accusamus optio! Sed amet provident velit ipsam dolorem odit reiciendis voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, natus repellendus praesentium ullam quidem qui tempora sit totam sunt vel asperiores commodi doloribus facilis adipisci nisi? Exercitationem temporibus quam cupiditate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quis in temporibus impedit exercitationem optio voluptate culpa pariatur eius necessitatibus odio reiciendis tempora minus asperiores, dolorum laborum quo sapiente voluptas.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia vero nisi in velit, consequatur exercitationem similique ea cum modi magni molestias qui itaque dolore nemo assumenda magnam libero inventore accusamus.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum nobis omnis suscipit odio repellendus harum qui. Est expedita aliquid laboriosam, tempore illum ipsum explicabo maxime fugit molestias, porro odio? Nisi?</p>
+
+        
+    </main>
+</body>
+</html>

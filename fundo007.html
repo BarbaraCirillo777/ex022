@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 500px;
+            padding: 20px;/* vai dar uma margem da caixa na parte de cima*/            
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(Imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;/*Pode mexer em left e top se for absolute*/
+            height: 50%; /*200px;*/
+            width: 50%;/*400px;*/
+            background-color: yellow;
+            /*margin: auto;centralizou a caixa amarela horizontalmente? então o margin não serve*/
+            left: 50%;/* Da borda esquerda até a caixa amarela*/
+            top: 50%;/* do topo da borda até o topo da caixa amarela*/ 
+            transform: translate(-50%,-50%);/*Vai fazer a caixa amarela ficar exatamente no meio com suas medidas*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"> 
+
+        </article> 
+    </section>
+    
+</body>
+</html> 
